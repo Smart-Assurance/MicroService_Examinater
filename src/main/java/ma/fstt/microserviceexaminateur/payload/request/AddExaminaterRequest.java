@@ -20,8 +20,6 @@ public class AddExaminaterRequest {
     private String l_name;
     @NotBlank
     private String f_name;
-
-
     @NotBlank
     @Indexed(unique = true)
     private String email;
@@ -31,13 +29,10 @@ public class AddExaminaterRequest {
     private String city;
     @NotBlank
     private String address;
-
     @NotBlank
     @Size(max = 12)
     private String cin;
-
     @NotBlank
     private Date date_of_birth;
-
 
 }

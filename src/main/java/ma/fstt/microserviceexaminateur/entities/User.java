@@ -16,25 +16,18 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public abstract class User {
     @Id
     private String id;
-
     private String l_name;
     private String f_name;
-
     @Indexed(unique = true)
     private String username;
-
     private String password;
-
     @Indexed(unique = true)
     private String email;
-
     private String phone;
     private String city;
     private String address;
     private String role;
-
     public String getRole() {
         return "ROLE_" + role;
     }
-
 }

@@ -144,8 +144,8 @@ public class ExaminaterController {
     @PutMapping("/{examinaterId}")
     public ResponseEntity<MessageResponse> examinaterUpdate(
             @PathVariable String examinaterId,
-            @RequestBody UpdateExaminaterRequest updatedClientRequest
-            ,@RequestHeader("Authorization") String authorizationHeader
+            @RequestBody UpdateExaminaterRequest updatedClientRequest,
+            @RequestHeader("Authorization") String authorizationHeader
     ) {
         try {
             // Extract the token from the Authorization header
